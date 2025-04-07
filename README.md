@@ -31,10 +31,9 @@ Chatzy uses [Firebase](https://firebase.google.com/) for authentication and real
 2. Enable **Authentication** (Email/Password or any provider you want).
 3. Enable **Cloud Firestore** (Start in test mode for dev).
 4. Go to **Project Settings → General → Web App** and register a new web app.
-5. Copy the Firebase config and replace the placeholder in `src/firebase.js` (or wherever your config lives):
+5. Copy the Firebase config and replace the placeholder in `src/firebase-config.ts` :
 
-```js
-// src/firebase.js
+```ts
 const firebaseConfig = {
   apiKey: "your-api-key",
   authDomain: "your-project-id.firebaseapp.com",
