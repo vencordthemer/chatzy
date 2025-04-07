@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# Chatzy 💬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple real-time chat app built with [Vite](https://vitejs.dev), Firebase, and React.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+Follow these steps to get Chatzy up and running on your local machine.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Clone the Repository
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/your-username/chatzy.git
+cd chatzy
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set Up Firebase
+
+Chatzy uses [Firebase](https://firebase.google.com/) for authentication and real-time data via Firestore.
+
+#### 🔧 Steps:
+
+1. Go to [Firebase Console](https://console.firebase.google.com/) and create a new project.
+2. Enable **Authentication** (Email/Password or any provider you want).
+3. Enable **Cloud Firestore** (Start in test mode for dev).
+4. Go to **Project Settings → General → Web App** and register a new web app.
+5. Copy the Firebase config and replace the placeholder in `src/firebase.js` (or wherever your config lives):
 
 ```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+// src/firebase.js
+const firebaseConfig = {
+  apiKey: "your-api-key",
+  authDomain: "your-project-id.firebaseapp.com",
+  projectId: "your-project-id",
+  storageBucket: "your-project-id.appspot.com",
+  messagingSenderId: "your-messaging-sender-id",
+  appId: "your-app-id"
+};
 ```
+
+> ⚠️ Do **not** commit your actual Firebase keys if the repo is public unless you're okay with it being used for testing only.
+
+---
+
+### 4. Start the Project
+
+```bash
+npm run dev
+```
+
+Then visit `http://localhost:5173` in your browser to start chatting!
+
+---
+
+## 🛠 Tech Stack
+
+- ⚡️ [Vite](https://vitejs.dev) — Lightning-fast frontend tooling
+- ⚛️ React — UI Library
+- 🔥 Firebase — Auth & Firestore for backend
+- 💅 Styled Components (or Tailwind, if used)
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! Feel free to fork this project, submit issues, or suggest new features.
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
