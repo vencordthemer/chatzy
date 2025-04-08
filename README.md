@@ -1,4 +1,4 @@
-# Chatzy 💬
+# Chatzy 
 
 A simple real-time chat app built with [Vite](https://vitejs.dev), Firebase, and React.
 
