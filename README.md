@@ -42,11 +42,7 @@ const firebaseConfig = {
   messagingSenderId: "your-messaging-sender-id",
   appId: "your-app-id"
 };
-```
 
-> ⚠️ Do **not** commit your actual Firebase keys if the repo is public unless you're okay with it being used for testing only.
-
----
 
 ### 4. Start the Project
 
