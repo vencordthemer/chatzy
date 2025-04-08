@@ -62,7 +62,7 @@ Then visit `http://localhost:5173` in your browser to start chatting!
 - Styled Components
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcome! Feel free to fork this project, submit issues, or suggest new features.
 
