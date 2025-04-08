@@ -54,7 +54,7 @@ Then visit `http://localhost:5173` in your browser to start chatting!
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 -  [Vite](https://vitejs.dev) — Lightning-fast frontend tooling
 - React — UI Library
