@@ -4,7 +4,7 @@ A simple real-time chat app built with [Vite](https://vitejs.dev), Firebase, and
 
 ---
 
-##  Getting Started
+##  Getting Started 🚀
 
 Follow these steps to get Chatzy up and running on your local machine.
 
