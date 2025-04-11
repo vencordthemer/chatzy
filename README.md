@@ -44,7 +44,7 @@ const firebaseConfig = {
 };
 
 
-### 4. Start the Project
+### 4. Start the Project 👾
 
 ```bash
 npm run dev
