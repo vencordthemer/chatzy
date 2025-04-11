@@ -25,12 +25,8 @@ npm install
 
 Chatzy uses [Firebase](https://firebase.google.com/) for authentication and real-time data via Firestore.
 
-#### Steps:
+### 5. Adding Keys:
 
-1. Go to [Firebase Console](https://console.firebase.google.com/) and create a new project.
-2. Enable **Authentication** (Email/Password or any provider you want).
-3. Enable **Cloud Firestore** (Start in test mode for dev).
-4. Go to **Project Settings → General → Web App** and register a new web app.
 5. Copy the Firebase config and replace the placeholder in `src/firebase-config.ts` :
 
 ```ts
